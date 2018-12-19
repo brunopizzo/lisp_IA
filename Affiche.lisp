@@ -1,0 +1,46 @@
+(defvar *sleep_time* 0.2)
+
+(defun animation_bird(times)
+
+  (cond
+    ((> times 0)
+  (screen:clear-window (screen:make-window))
+  (format t "          | o     |~%")
+  (format t "          |       |~%")
+  (format t "       _  | |  () |~%")
+  (format t "      ( '>| |     |~%")
+  (format t "     /  ( |     | |   SYSTEME EXPERT~%")
+  (format t "    / / |/|   |   |~%")
+  (format t "    |/\\ |/|       |   CLASSIFICATION DES ANIMAUX~%")
+  (format t "       \\\\ | ()    |~%")
+  (format t "        \\\\|    |  |~%")
+  (format t "          |    |  |~%")
+  (format t "          |       |~%")
+  (format t "          |  |    |~%")
+  (format t "||||||||||||||||||||||||||||||||||||||||||||||||||~%~%")
+
+  (sleep *sleep_time*)
+  (screen:clear-window (screen:make-window))
+
+  (format t "          | o     |~%")
+  (format t "          |       |~%")
+  (format t "      _   | |  () |~%")
+  (format t "     ( '> | |     |~%")
+  (format t "     /  ( |     | |   SYSTEME EXPERT~%")
+  (format t "    / / |/|   |   |~%")
+  (format t "    |/\\ |/|       |   CLASSIFICATION DES ANIMAUX~%")
+  (format t "       \\\\ | ()    |~%")
+  (format t "        \\\\|    |  |~%")
+  (format t "          |    |  |~%")
+  (format t "          |       |~%")
+  (format t "          |  |    |~%")
+  (format t "||||||||||||||||||||||||||||||||||||||||||||||||||~%~%")
+  (sleep *sleep_time*)
+  (animation_bird(- times 1))
+
+  )
+    (t NIL)
+
+)
+  )
+
